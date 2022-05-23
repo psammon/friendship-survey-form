@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text center">Friendship Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to apply for my friendship.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        
+        <div class="form group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+
+        <div class="form group">
+          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="15"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+
+        <div class="form group">
+          <p>What is your favorite color?</p>
+          <select id="dropdown" name="favorite-color" class="form-control" required>
+              <option disabled selected value>Select Favorite Color</option>
+              <option value="red">Red</option>
+              <option value="orange">Orange</option>
+              <option value="yellow">Yellow</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+              <option value="purple">Purple</option>
+              <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>What is your gender?</p>
+          <label>
+            <input
+              name="gender"
+              value="man"
+              type="radio"
+              class="input-radio"
+              checked
+            />Man</label>
+          <label>
+            <input
+              name="gender"
+              value="woman"
+              type="radio"
+              class="input-radio"
+            />Woman</label>
+          <label>
+            <input
+              name="gender"
+              value="other"
+              type="radio"
+              class="input-radio"
+            />Other</label>
+          <label>
+            <input
+              name="gender"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not Sure</label>
+        </div>
+
+        <div class="form-group">
+          <p>Favorite Movie Genre</p>
+          <select id="favorite-movie" name="favorite-movie" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="horror">Horror</option>
+            <option value="comedy">Comedy</option>
+            <option value="romance">Romance</option>
+            <option value="drama">Drama</option>
+            <option value="action">Action</option>
+            <option value="fantasy">Fantasy</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>What pets are apart of your family?
+            <span class="clue">(Check all that apply)<span>
+          </p>
+
+          <label><input
+                  name="pets"
+                  value="dog"
+                  type="checkbox"
+                  class="input-checkbox"/>
+                Dog</label>
+          <label><input
+                  name="pets"
+                  value="cat"
+                  type="checkbox"
+                  class="input-checkbox"/>
+                Cat</label>
+          <label><input
+                  name="pets"
+                  value="fish"
+                  type="checkbox"
+                  class="input-checkbox"/>
+                Fish</label>
+          <label><input
+                  name="pets"
+                  value="bunny"
+                  type="checkbox"
+                  class="input-checkbox"/>
+                Bunny</label>
+          <label><input
+                  name="pets"
+                  value="bird"
+                  type="checkbox"
+                  class="input-checkbox"/>
+                Bird</label>
+          <label><input
+                  name="pets"
+                  value="turtle"
+                  type="checkbox"
+                  class="input-checkbox"/>
+                Turtle</label>
+          <label><input
+                  name="pets"
+                  value="guinea-pig"
+                  type="checkbox"
+                  class="input-checkbox"/>
+                Guinea Pig</label>
+          <label><input
+                  name="pets"
+                  value="gecko"
+                  type="checkbox"
+                  class="input-checkbox"/>
+                Gecko</label>
+          <label><input
+                  name="pets"
+                  value="other"
+                  type="checkbox"
+                  class="input-checkbox"/>
+                Other</label>
+          <label><input
+                  name="pets"
+                  value="none"
+                  type="checkbox"
+                  class="input-checkbox"/>
+                None</label>
+        </div>
+
+        <div class="form-group">
+          <p>Any funny jokes or anecdotes?</p>
+          <textarea
+            id="funnies"
+            class="input-textarea"
+            name="funny"
+            placeholder="Knock knock! Who's there? ..."
+          ></textarea>
+        <div>
+
+        <div class="form-group">
+          <button type="submit" 
+                  id="submit"
+                  class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
